@@ -14,7 +14,7 @@ public class ConsultaVeterinaria extends Atendimento {
     }
 
     public ConsultaVeterinaria(int protocolo, String petNome, String petPorte, String tutorNome, LocalDateTime dataHora) {
-        super();
+        super(protocolo, petNome, petPorte, tutorNome, dataHora);
     }
 
     @Override
