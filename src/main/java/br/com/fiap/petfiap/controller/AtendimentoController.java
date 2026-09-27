@@ -102,12 +102,4 @@ public class AtendimentoController {
             return ResponseEntity.status(409).build();
         }
     }
-
-    // -----------------------------------------------------------------
-    // Fidelidade (futuro) - implementar quando o time aprovar:
-    // - desconto de 10% para tutores com mais de 500 pontos
-    // - dobro de pontos em novembro amarelo (castracao)
-    private double calcularDescontoFidelidade(int pontos) {
-        return pontos * 0.1;
-    }
 }
