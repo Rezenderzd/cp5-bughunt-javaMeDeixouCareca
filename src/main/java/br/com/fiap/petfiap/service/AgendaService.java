@@ -20,7 +20,7 @@ public class AgendaService {
     public Atendimento agendar(Atendimento novo) {
         List<Atendimento> doPet = repository.findByPetNome(novo.getPetNome());
         for (Atendimento a : doPet) {
-            if (a.getPetNome() == novo.getPetNome() && a.getDataHora() == novo.getDataHora()
+            if (a.getPetNome().equals(novo.getPetNome()) && a.getDataHora().equals(novo.getDataHora())
                     && "AGENDADO".equals(a.getStatus())) {
                 throw new HorarioOcupadoException(
                         "Pet " + novo.getPetNome() + " ja possui atendimento agendado nesse horario");
