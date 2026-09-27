@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 public abstract class Atendimento {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private int protocolo;
