@@ -10,7 +10,6 @@ public class GeradorProtocolo {
 
     private GeradorProtocolo() {
         contador = 0;
-        System.out.println("GeradorProtocolo criado!");
     }
 
     public static GeradorProtocolo getInstancia() {
