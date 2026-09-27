@@ -24,9 +24,9 @@ public class Tosa extends Atendimento {
 
     @Override
     public double calcularPreco() {
-        if ("PEQUENO".equals(getPetPorte())) {
+        if (PEQUENO.equals(getPetPorte())) {
             return 70.0;
-        } else if ("MEDIO".equals(getPetPorte())) {
+        } else if (MEDIO.equals(getPetPorte())) {
             return 90.0;
         }
         return 120.0;

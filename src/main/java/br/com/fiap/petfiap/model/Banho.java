@@ -24,9 +24,9 @@ public class Banho extends Atendimento {
 
     @Override
     public double calcularPreco() {
-        if ("PEQUENO".equals(getPetPorte())) {
+        if (PEQUENO.equals(getPetPorte())) {
             return 60.0;
-        } else if ("MEDIO".equals(getPetPorte())) {
+        } else if (MEDIO.equals(getPetPorte())) {
             return 80.0;
         }
         return 100.0;
